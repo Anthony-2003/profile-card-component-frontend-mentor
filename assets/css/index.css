@@ -24,7 +24,10 @@
 /*Body styles below*/
 
 .body {
-    background: var(--Dark-cyan) url("../img/bg-pattern-top.svg") no-repeat -40px -500px;
+    background: var(--Dark-cyan); 
+    background-image: url("../img/bg-pattern-top.svg"), url("../img/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom 24vh right 54vw, top 46vh left 50vw;
 }
 
 /*Styles of main section below*/
@@ -34,7 +37,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url("../img/bg-pattern-bottom.svg") no-repeat 110% 400px;
+  
 }
 
 /*Styles of card section below*/
@@ -116,30 +119,5 @@
     color: var(--Dark-gray);
 }
 
-/*-----------------------------Responsive-------------------------------*/
-
-/*---------------------------------1440px-------------------------------------*/
-
-@media (max-width: 1440px){
-   .body {
-    background-position: -350px -500px;
-   }
-
-   .main {
-       background-position: 150% 400px;
-   }
-}
-
-/*---------------------------------375px-----------------------------------------*/
-
-@media (max-width: 375px){
-    .body {
-        background-position: -670px -645px;
-    }
- 
-    .main {
-        background-position: -26% 400px;
-    }
- }
 
  
