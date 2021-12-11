@@ -1,0 +1,145 @@
+/*Google fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/*Colors*/
+
+:root {
+
+    /*Primary*/
+
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+    /*Neutral*/
+
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+/*Body styles below*/
+
+.body {
+    background: var(--Dark-cyan) url("../img/bg-pattern-top.svg") no-repeat -40px -500px;
+}
+
+/*Styles of main section below*/
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("../img/bg-pattern-bottom.svg") no-repeat 110% 400px;
+}
+
+/*Styles of card section below*/
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/*Styles of card top section below*/
+
+.card__top__img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -ms-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+}
+
+/*Styles of card profile section below*/
+
+.card__profile {
+    margin-top: -3.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card__profile__img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: .3rem;
+    background-color: #fff;
+}
+
+/*Styles of card middle section below*/
+
+.card__middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--Dark-gray);
+    font-size: 18px;
+}
+
+.card__middle__span {
+    color: var(--Dark-gray);
+}
+
+.card__middle__span--city {
+    padding-top: .5rem;
+}
+
+/*Styles of card footer section below*/
+
+.card__footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    font-size: 18px;
+}
+
+.card__footer__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__footer__column__span {
+    color: var(--Dark-gray);
+}
+
+/*-----------------------------Responsive-------------------------------*/
+
+/*---------------------------------1440px-------------------------------------*/
+
+@media (max-width: 1440px){
+   .body {
+    background-position: -350px -500px;
+   }
+
+   .main {
+       background-position: 150% 400px;
+   }
+}
+
+/*---------------------------------375px-----------------------------------------*/
+
+@media (max-width: 375px){
+    .body {
+        background-position: -670px -645px;
+    }
+ 
+    .main {
+        background-position: -26% 400px;
+    }
+ }
+
+ 
